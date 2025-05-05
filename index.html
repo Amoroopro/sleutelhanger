@@ -110,18 +110,18 @@
 
     <section class="contact-form">
         <h2>Bestellen of Contact</h2>
-      <form action="https://formspree.io/f/mpwddpdl" method="POST">
-          <label for="name">Naam:</label>
-          <input type="text" id="name" name="name" required>
+      <form action="amory.smetryns@leiepoort.be" method="POST">
+        <input type="text" name="name" placeholder="Je naam" required>
+        <input type="email" name="email" placeholder="Je e-mailadres" required>
+        <textarea name="message" placeholder="Je bestelling of bericht" required></textarea>
 
-          <label for="email">E-mailadres:</label>
-          <input type="email" id="email" name="email" required>
+        <!-- Verborgen opties -->
+        <input type="hidden" name="_autoresponse" value="Bedankt voor je bestelling! We nemen zo snel mogelijk contact met je op.">
+        <input type="hidden" name="_template" value="table"> <!-- Netjes in je mailbox -->
 
-          <label for="message">Bericht of bestelling:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Verstuur</button>
+        <button type="submit">Verstuur</button>
       </form>
+
 
     </section>
 </main>
