@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleutelhangers van Fietskettingen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.3rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .product {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product h3 {
+            margin: 0.5rem 0;
+        }
+        .product p {
+            margin: 0.2rem 0;
+        }
+        .contact-form {
+            margin-top: 2rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sleutelhangers van Fietskettingen</h1>
+    <p>Handgemaakt en uniek – vanaf €3</p>
+</header>
+
+<main>
+    <section>
+        <h2>Onze Sleutelhangers</h2>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Grijs</h3>
+                <p>Prijs: €3</p>
+            </div>
+            <div class="product">
+                <h3>Zwart met Grijs</h3>
+                <p>Prijs: €3</p>
+            </div>
+            <div class="product">
+                <h3>Zwart</h3>
+                <p>Prijs: €3</p>
+            </div>
+            <div class="product">
+                <h3>Zwart met Goud</h3>
+                <p>Prijs: €4</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Bestellen of Contact</h2>
+        <form>
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mailadres:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Bericht of bestelling:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    © 2025 Sleutelhangers van Fietskettingen
+</footer>
+
+</body>
+</html>
